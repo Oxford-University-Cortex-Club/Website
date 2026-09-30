@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         'event_label': 'LinkedIn',
                         'link_url': url
                     });
-                } else if (url.includes('forms.office.com')) {
+                } else if (url.includes('forms.office.com') || url.includes('forms.cloud.microsoft')) {
                     gtag('event', 'mailing_list_form_click', {
                         'event_category': 'form',
                         'event_label': 'Mailing List Form',
