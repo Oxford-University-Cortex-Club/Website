@@ -1,8 +1,8 @@
 {
   "title": "Event Title",
   "date": "YYYY-MM-DD",
-  "description": "Event description goes here.",
-  "speaker": "Speaker Name",
-  "topic": "Shorter summary of seminar topic/event"
+  "description": "Speaker Name, titles, and event description go here.",
+  "speaker": "Speaker Name (relevant for animated termcard)",
+  "topic": "Shorter summary of seminar topic/event (relevant for animated termcard)"
 }
 
