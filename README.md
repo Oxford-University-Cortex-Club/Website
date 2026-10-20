@@ -69,6 +69,31 @@ Key folders:
 
 ---
 
+## Updating the animated termcard
+
+The homepage shows the termcard as an animated neuron. It is built automatically from the event files in `events/`. There is no image to update.
+
+**At the start of each term, change one line** at the top of `utils/term-neuron.js`:
+
+```js
+week1Sunday: '2026-10-11',  // the Sunday that starts Week 1  <-- update each term
+```
+
+Set it to the Sunday that starts Week 1 of the new term. The term label (e.g. `MT26`, `HT27`, `TT27`) is worked out from that date. Then add the term's events as normal (see "Adding a new event").
+
+How it behaves:
+
+- Any event dated from Week 0 to the end of Week 8 appears on the neuron, on the correct week. Several events in the same week share one card.
+- Events outside term (e.g. summer socials, Week 9) are left off the neuron. They still appear on the Events page and in the homepage "Upcoming Events" cards.
+- Talks grey out once they have happened. The next upcoming talk is tagged "NEXT".
+- After term ends, the neuron stays up with all talks greyed out until `week1Sunday` is changed for the next term.
+- If the configured term has no events at all, the section hides itself.
+- On phones, the axon runs vertically, with each week lighting up as you scroll.
+
+Files: `utils/term-neuron.js` (behaviour) and `utils/term-neuron.css` (styling). The section itself is near the top of `index.html` (`id="this-term"`).
+
+---
+
 ## Adding a new event
 
 New events are stored as JSON files in:
