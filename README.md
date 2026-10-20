@@ -122,6 +122,21 @@ Once the changes are on `main`, GitHub Pages will automatically update the live 
 
 Existing event files can be used as examples if additional formatting is required.
 
+**Short labels for the animated termcard.** Events also appear on the animated termcard found on the homepage (see previous section). Its cards are small, so it can take condensed information from the `speaker` and `topic` fields. These fields are not mandatory; the code can function without them, but it is advisable to include them. 
+
+```json
+{
+  "title": "CorTalk: Natural Transposon Variation Shapes Individual Differences in Learning and Memory Dynamics",
+  "date": "2026-10-23",
+  "description": "Dr Charly Treiber, Associate Professor of Neurogenetics and Behaviour (Department of Biology, University of Oxford). Life and Mind Building, Seminar Room 6, 16:00–17:00.",
+  "speaker": "Prof. Charly Treiber (Oxford)",
+  "topic": "Genomics, learning and individual behaviour"
+}
+```
+
+- `title` and `description` are used on the Events page and the homepage "Upcoming Events" cards.
+- `speaker` (bold line) and `topic` (small line) are used only on the animated termcard. If they are left out, the animated termcard uses the title and a shortened description instead.
+
 **Archive vs delete:** keep past event JSON files even when they are no longer “featured”. Removing a file from `events/index.json` (or leaving past dates in place) hides it from the current listing without losing the data.
 
 ---
@@ -254,7 +269,7 @@ For larger changes:
 4. Review the changes.
 5. Merge into `main`.
 
-For small content updates, direct edits may also be made through GitHub if appropriate.
+`main` is protected, so every change goes through a pull request, even small edits on github.com: commit to a new branch, open the pull request, then merge it (no approval needed). Delete the branch after merging.
 
 The `main` branch should always be treated as the live version of the website.
 
@@ -285,6 +300,8 @@ Access expectations:
 - At least **two** current committee members should retain **Owner** access to the GitHub organization.
 - At least **two** people should have access to the **Namecheap** account that manages `cortexclub.com`.
 - Prefer the **club email** as the contact/recovery email for GitHub org, domain registrar, and related services, rather than an individual’s personal account.
+
+**Protections:** the ruleset "Protect main (live site)" (repo Settings → Rules → Rulesets) requires pull requests and blocks force pushes and deletion of `main`. The **Claude GitHub app** is installed on this repository (October 2026); remove it in organization Settings → GitHub Apps if no longer needed.
 
 Account credentials for external services (domain registrar, email, analytics, etc.) should be transferred between committees and stored securely. Single-person ownership of critical accounts is a risk — avoid it.
 
