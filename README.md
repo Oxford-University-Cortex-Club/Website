@@ -122,6 +122,21 @@ Once the changes are on `main`, GitHub Pages will automatically update the live 
 
 Existing event files can be used as examples if additional formatting is required.
 
+**Optional short labels for the homepage neuron.** Events also appear on the animated "This Term" neuron on the homepage (see previous section). Its cards are small, so you can give an event two optional extra fields with a short version of the details:
+
+```json
+{
+  "title": "CorTalk: Natural Transposon Variation Shapes Individual Differences in Learning and Memory Dynamics",
+  "date": "2026-10-23",
+  "description": "Dr Charly Treiber, Associate Professor of Neurogenetics and Behaviour (Department of Biology, University of Oxford). Life and Mind Building, Seminar Room 6, 16:00–17:00.",
+  "speaker": "Prof. Charly Treiber (Oxford)",
+  "topic": "Genomics, learning and individual behaviour"
+}
+```
+
+- `title` and `description` are used on the Events page and the homepage "Upcoming Events" cards.
+- `speaker` (bold line) and `topic` (small line) are used only on the neuron. If they are left out, the neuron uses the title and a shortened description instead.
+
 **Archive vs delete:** keep past event JSON files even when they are no longer “featured”. Removing a file from `events/index.json` (or leaving past dates in place) hides it from the current listing without losing the data.
 
 ---
