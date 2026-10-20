@@ -122,7 +122,7 @@ Once the changes are on `main`, GitHub Pages will automatically update the live 
 
 Existing event files can be used as examples if additional formatting is required.
 
-**Short labels for the animated termcard.** Events also appear on the animated termcard found on the homepage (see previous fields). Its cards are small, so it can take condensed information from the "speaker" and "topic" fields. These fields are not mandatory; the code can function without them, but it is advisable to include them. 
+**Short labels for the animated termcard.** Events also appear on the animated termcard found on the homepage (see previous section). Its cards are small, so it can take condensed information from the `speaker` and `topic` fields. These fields are not mandatory; the code can function without them, but it is advisable to include them. 
 
 ```json
 {
@@ -268,8 +268,6 @@ For larger changes:
 3. Open a Pull Request.
 4. Review the changes.
 5. Merge into `main`.
-
-For small content updates, direct edits may also be made through GitHub if appropriate.
 
 `main` is protected, so every change goes through a pull request, even small edits on github.com: commit to a new branch, open the pull request, then merge it (no approval needed). Delete the branch after merging.
 
