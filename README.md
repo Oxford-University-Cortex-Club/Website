@@ -122,7 +122,7 @@ Once the changes are on `main`, GitHub Pages will automatically update the live 
 
 Existing event files can be used as examples if additional formatting is required.
 
-**Optional short labels for the homepage neuron.** Events also appear on the animated "This Term" neuron on the homepage (see previous section). Its cards are small, so you can give an event two optional extra fields with a short version of the details:
+**Short labels for the animated termcard.** Events also appear on the animated termcard found on the homepage (see previous fields). Its cards are small, so it can take condensed information from the "speaker" and "topic" fields. These fields are not mandatory; the code can function without them, but it is advisable to include them. 
 
 ```json
 {
@@ -135,7 +135,7 @@ Existing event files can be used as examples if additional formatting is require
 ```
 
 - `title` and `description` are used on the Events page and the homepage "Upcoming Events" cards.
-- `speaker` (bold line) and `topic` (small line) are used only on the neuron. If they are left out, the neuron uses the title and a shortened description instead.
+- `speaker` (bold line) and `topic` (small line) are used only on the animated termcard. If they are left out, the animated termcard uses the title and a shortened description instead.
 
 **Archive vs delete:** keep past event JSON files even when they are no longer “featured”. Removing a file from `events/index.json` (or leaving past dates in place) hides it from the current listing without losing the data.
 
