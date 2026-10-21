@@ -241,6 +241,17 @@ The intention is simply that the policy should be reviewed as committee structur
 
 ---
 
+## Search engines (SEO)
+
+These help the site show up in Google for searches like "Cortex Club Oxford". They don't affect how the site looks.
+
+- **Page titles and descriptions:** each page's `<head>` has a `<title>` and a `<meta name="description">`, the text shown in search results. Keep "Cortex Club Oxford" in titles so we aren't confused with other Cortex Clubs.
+- **New news article pages:** fill in the description in the copied template, and add the page's address to `sitemap.xml` (one `<url>` line, following the existing ones). Events don't need this; they appear on the Events page.
+- **Homepage headline:** edit the wording in `index.html` (`id="hero-title"` and `id="hero-subtitle"`). `utils/typewriter.js` just animates whatever is there.
+- **`sitemap.xml` and `robots.txt`** tell search engines which pages exist. Don't delete them.
+
+---
+
 ## Deployment
 
 The live website is deployed through GitHub Pages.
