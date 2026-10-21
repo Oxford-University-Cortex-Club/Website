@@ -249,6 +249,18 @@ body {
     letter-spacing: 1px;
 }
 
+/* Homepage headline: the text is in index.html for search engines; typewriter.js
+   hides it, then types it out. If the script doesn't run, it appears after 3s. */
+.js .hero-title,
+.js .hero-subtitle {
+    visibility: hidden;
+    animation: hero-reveal 0s 3s forwards;
+}
+
+@keyframes hero-reveal {
+    to { visibility: visible; }
+}
+
 .hero-buttons {
     display: flex;
     gap: 2rem;
