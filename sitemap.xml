@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- List of the site's pages for search engines. Add a line here for each new
+     news article page (news/html/...). Events don't need adding: they appear
+     on the Events page. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.cortexclub.com/</loc></url>
+  <url><loc>https://www.cortexclub.com/sections/events.html</loc></url>
+  <url><loc>https://www.cortexclub.com/sections/news.html</loc></url>
+  <url><loc>https://www.cortexclub.com/sections/gallery.html</loc></url>
+  <url><loc>https://www.cortexclub.com/sections/committee.html</loc></url>
+  <url><loc>https://www.cortexclub.com/sections/contact.html</loc></url>
+  <url><loc>https://www.cortexclub.com/news/html/AnnualSymposium26.html</loc></url>
+</urlset>

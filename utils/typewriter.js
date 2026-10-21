@@ -3,6 +3,7 @@ function typeText(element, text, speed = 50, showCursor = false) {
     return new Promise((resolve) => {
         let index = 0;
         element.textContent = '';
+        element.style.visibility = 'visible';
         
         function type() {
             if (index < text.length) {
@@ -31,9 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroSubtitle = document.getElementById('hero-subtitle');
     
     if (heroTitle && heroSubtitle) {
-        typeText(heroTitle, 'EXPLORING THE FRONTIERS OF NEUROSCIENCE', 40, false)
+        // The headline text lives in index.html (so search engines can read it);
+        // this script just re-types it. To change the wording, edit index.html.
+        const titleText = heroTitle.textContent.trim();
+        const subtitleText = heroSubtitle.textContent.trim();
+        typeText(heroTitle, titleText, 40, false)
             .then(() => {
-                return typeText(heroSubtitle, 'Oxford\'s Premier Neuroscience Society - Where Minds Meet to Unravel the Mysteries of the Brain', 20, true);
+                return typeText(heroSubtitle, subtitleText, 20, true);
             });
     }
 });

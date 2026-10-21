@@ -1,0 +1,6 @@
+# Cortex Club website (www.cortexclub.com)
+User-agent: *
+Disallow: /start-server.html
+Disallow: /news/html/template.html
+
+Sitemap: https://www.cortexclub.com/sitemap.xml
