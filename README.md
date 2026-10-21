@@ -317,7 +317,7 @@ The existing structure could easily be extended to show previous Cortex Club com
 
 ### 2. Speaker archive
 
-Past speakers could be turned into a searchable or browsable archive using the existing event data.
+Use the existing event data to turn past speakers into a searchable or browsable archive.
 
 ### 3. Expanded media galleries
 
