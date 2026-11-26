@@ -1,7 +1,7 @@
 {
-  "title": "CorTalk: Computational Neurology, Memory and Motivation",
+  "title": "CorTalk: A Common Neural Mechanism for Binding in Memory, Zero-Shot Rules and Syntax",
   "date": "2026-11-27",
-  "description": "Professor Sanjay Manohar (University of Oxford).",
+  "description": "Professor Sanjay Manohar (University of Oxford). How do neurons bind information into unified thoughts? One clue is that neurons across the brain code flexibly: their selectivity appears to change according to what is relevant. But if a neuron's tuning changes from moment to moment, this creates a \"readout problem\" for other neurons interpreting their own inputs. Prof. Manohar will describe how \"plastic attractors\" arise from rapid synaptic changes, which solve both the binding and the readout problems and greatly expand the information-processing capacity of neurons. Using simulations, he will show how plastic attractors could allow three things: binding information in working memory, binding actions to contexts for zero-shot task rules, and binding words to their syntactic roles for manipulation in sentences. Such models predict results from fMRI, MEG, TMS and single-neuron recordings. He will also show that mechanisms of binding in memory are modulated by dopamine and acetylcholine, and are critical in neurological diseases such as Alzheimer's and Parkinson's disease.",
   "speaker": "Prof. Sanjay Manohar (Oxford)",
-  "topic": "Computational neurology, memory and motivation"
+  "topic": "A common neural mechanism for binding in memory, zero-shot rules and syntax"
 }
